@@ -17,7 +17,7 @@ jobs:
           who-to-greet: ${{ github.actor }}
       - name: time
         run: |
-          echo "The time of the greeting was at: ${{ steps.print-to-log.outputs.time }}
+          echo "The time of the greeting was at: ${{ steps.print-to-log.outputs.time }}"
   secondjob:
       runs-on: ubuntu-latest
       steps:
@@ -25,4 +25,4 @@ jobs:
           shell: bash
           run: |
             echo this is the second job
-            echo and this is a multi-line scri
+            echo and this is a multi-line script

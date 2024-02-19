@@ -36,7 +36,7 @@ jobs:
         - name: environment variables
           env:
             STEP_VAR: "This is variable is decared at the step level"
-          run:i
+          run:
             echo $WORKFLOW_VAR
             echo $JOB_VAR
             echo $STEP_VAR
